@@ -22,9 +22,8 @@ const storage = multer.diskStorage({ destination : "uploads/image",
       }})
 app.use("/file", express.static("uploads/image"))
 const upload = multer({storage:storage})
-
 app.get("/",(req,res)=>{
-    res.send("hello from backend")
+    res.send("hello from back")
 })
 
 app.get('/api/users', async (req,res) =>{
